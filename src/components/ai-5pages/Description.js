@@ -1,3 +1,4 @@
+import CitygelLogo from "./CitygelLogo";
 import RangeSliderParent from "./RangeSliderParent";
 import ToggleParent from "./ToggleParent";
 import Header1 from "components/Header1";
@@ -6,20 +7,20 @@ const Description = () => {
   return (
     <div>
       <Header1 className="flex flex-col justify-center items-center w-full" />
-      <div className="w-full rounded-31xl bg-gray-200 overflow-hidden flex flex-col items-end justify-start gap-[30px] tracking-[normal]">
+      <div className="w-full bg-gray-200 overflow-hidden flex flex-col items-end justify-start gap-[30px] tracking-[normal]">
         <main className="w-[1830px] flex flex-col items-start justify-start pt-0 pb-[30px] pr-0 pl-5 box-border gap-[60px] max-w-full mq825:gap-[30px_60px]">
-          <section className="self-stretch flex flex-col items-start justify-start gap-[50px] max-w-full text-left text-25xl text-black font-poppins mq825:gap-[25px_50px]">
+          <section className="self-stretch flex flex-col items-start justify-start gap-[50px] max-w-full text-left text-25xl text-black-900_87 font-poppins mq825:gap-[25px_50px]">
             <div className=" flex flex-row flex-wrap items-start justify-start py-0 pr-5 pl-0 box-border gap-[39.69999999999982px] max-w-full mq825:gap-[20px]">
               <div className="flex-1 w-[80%] flex flex-col items-start justify-start gap-[30px] max-w-full lg:min-w-full">
-                <div className="self-stretch h-[760px] relative">
+                <div className="self-stretch h-[760px] mq500:h-[420px] relative">
                   <img
-                    className="relative rounded-xl w-[100%] h-[760px] object-cover"
+                    className="relative rounded-[20px] w-[100%] h-[760px] mt-[20px] mq500:h-[400px] object-cover"
                     alt=""
                     src="/rectangle-15@2x.png"
                   />
                 </div>
                 <div className="self-stretch flex flex-col items-start justify-start gap-[30px] max-w-full">
-                  <div className="self-stretch flex flex-row items-start justify-start gap-[53px] max-w-full lg:flex-wrap mq825:gap-[53px_26px]">
+                  <div className="self-stretch flex flex-row items-start justify-start mq500:gap-[20px] gap-[53px] max-w-full mq1050:flex-wrap mq825:gap-[53px_26px] mq500:flex-col">
                     <div className="flex-1 flex flex-col items-start justify-start gap-[10px] min-w-[537px] max-w-full mq825:min-w-full">
                       <h1 className="m-0 self-stretch relative text-inherit leading-[50px] font-semibold font-inherit mq825:text-16xl mq825:leading-[40px] mq450:text-7xl mq450:leading-[30px]">
                         Dell Touch Screen - Core I7 16GB RAM 512GB
@@ -28,16 +29,18 @@ const Description = () => {
                         Electronics . Computers
                       </div>
                     </div>
-                    <div className="flex flex-row items-start justify-start gap-[10px] max-w-full text-lg text-white mq450:flex-wrap">
-                      <div className="rounded-3xs [background:linear-gradient(90deg,_#fcb100,_#ed893e)] flex flex-row items-start justify-start py-1.5 px-5">
-                        <div className="relative">Premium</div>
-                      </div>
-                      <div className="rounded-3xs [background:linear-gradient(90deg,_#fcb100,_#ed893e)] flex flex-row items-start justify-start py-1.5 px-5">
-                        <div className="relative">Premium</div>
-                      </div>
-                      <div className="rounded-3xs [background:linear-gradient(90deg,_#fcb100,_#ed893e)] flex flex-row items-start justify-start py-1.5 px-5">
-                        <div className="relative">Premium</div>
-                      </div>
+                    {/*~~~~~~~~~~~~~~~~~Yellow button section~~~~~~~~~~~~~~~~ */}
+                    <div className="flex flex-row items-start justify-start gap-[10px] max-w-full text-[21px] mq500:text-[15px] text-white mq450:flex-wrap">
+                      <button className=" text-[21px] mq500:text-[13px] relative rounded-3xs [background:linear-gradient(90deg,_#fcb100,_#ed893e)] flex flex-row items-start justify-start mq500:py-1.5 mq500:px-5 py-3 px-7">
+                        Premium</button>
+
+                      <button className="text-[21px] mq500:text-[13px] relative rounded-3xs [background:linear-gradient(90deg,_#fcb100,_#ed893e)] flex flex-row items-start justify-start mq500:py-1.5 mq500:px-5 py-3 px-7">
+                        Premium</button>
+
+
+                      <button className=" text-[21px] mq500:text-[13px] rounded-3xs [background:linear-gradient(90deg,_#fcb100,_#ed893e)] flex flex-row items-start justify-start mq500:py-1.5 mq500:px-5 py-3 px-7 relative">
+                      Premium</button>
+
                     </div>
                   </div>
                   <div className="self-stretch flex flex-row items-start justify-between max-w-full gap-[20px] mq825:flex-wrap">
@@ -116,10 +119,10 @@ const Description = () => {
                   </h1>
                 </div>
               </div>
-              <div className="w-[395px] w-[20%] mt-10 flex flex-col items-start justify-start gap-[44px] max-w-full text-center text-[32px] mq450:gap-[22px_44px]">
-                <div className="self-stretch rounded-xl bg-white shadow-[0px_0px_10px_rgba(0,_0,_0,_0.15)] box-border flex flex-col items-start justify-start pt-5 px-2 pb-2.5 gap-[25px] max-w-full border-[1.5px] border-solid border-gray-100">
-                  <div className="flex items-center justify-center py-0  mq450:pl-5 mq450:pr-5 mq450:box-border">
-                    <h4 className="m-0 text-2xl  relative text-inherit font-medium font-inherit flex items-center justify-center whitespace-nowrap z-[1] mq825:text-7xl mq450:text-lgi">
+              <div className="w-[395px] w-[20%] mq500:w-[100%] mt-10 flex flex-col items-start justify-start gap-[44px] max-w-full text-center">
+                <div className="self-stretch rounded-xl bg-white-A700 shadow-[0px_0px_10px_rgba(0,_0,_0,_0.15)] box-border flex flex-col items-start justify-start pt-5 px-2 pb-2.5 gap-[25px] max-w-full border-[1.5px] border-solid border-gray-100">
+                  <div className="flex items-center justify-center mq500:box-border w-[100%]">
+                    <h4 className="m-0 text-[28px] font-bold mq500:text-[28px]  relative text-inherit font-medium font-inherit flex items-center justify-center whitespace-nowrap z-[1] mq825:text-[27px] text-black-900_87">
                       For more details
                     </h4>
                   </div>
@@ -134,7 +137,7 @@ const Description = () => {
                     />
                   </div>
                 </div>
-                <div className="self-stretch bg-gainsboro-100 flex flex-row items-start justify-center py-[633px] px-5 box-border max-w-full text-left text-31xl lg:pt-[411px] lg:pb-[411px] lg:box-border mq825:pt-[267px] mq825:pb-[267px] mq825:box-border">
+                <div className="self-stretch bg-gainsboro-100 flex flex-row items-start justify-center py-[633px] px-5 box-border max-w-full text-left text-31xl lg:pt-[411px] lg:pb-[411px] lg:box-border mq825:pt-[267px] mq825:pb-[267px] mq825:box-border mq500:hidden block">
                   <div className="h-[1341px] w-[395px] relative bg-gainsboro-100 hidden max-w-full" />
                   <h1 className="m-0 relative text-inherit font-normal font-inherit inline-block min-w-[70px] z-[1] mq825:text-21xl mq450:text-11xl">
                     AD
@@ -171,7 +174,7 @@ const Description = () => {
             </div>
           </div>
         </main>
-        <footer className="self-stretch h-[307px] bg-whitesmoke-100 flex flex-col items-center justify-start py-[37px] px-5 box-border gap-[10px] max-w-full text-left text-xl text-gray-1200 font-poppins">
+        {/* <footer className="self-stretch h-[307px] bg-whitesmoke-100 flex flex-col items-center justify-start py-[37px] px-5 box-border gap-[10px] max-w-full text-left text-xl text-gray-1200 font-poppins">
           <div className="w-[1920px] h-[307px] relative bg-whitesmoke-100 hidden max-w-full" />
           <img
             className="w-[390px] h-[193px] relative object-cover max-w-full z-[1]"
@@ -184,8 +187,10 @@ const Description = () => {
               ©CityGel.com 2024, All rights Reseved
             </div>
           </div>
-        </footer>
+        </footer> */}
+
       </div>
+      <CitygelLogo />
     </div>
   );
 };

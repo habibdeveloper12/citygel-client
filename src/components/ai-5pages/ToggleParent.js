@@ -2,12 +2,12 @@ import GroupComponent from "./GroupComponent";
 
 const ToggleParent = () => {
   return (
-    <div className="self-stretch flex flex-row items-start justify-center gap-[25px] max-w-full text-left text-lg text-white font-poppins mq1500:flex-wrap">
-      <div className="flex-1 rounded-xl bg-white shadow-[0px_0px_10px_rgba(0,_0,_0,_0.15)] box-border flex flex-col items-start justify-start py-2.5 px-2 gap-[10px] min-w-[263px] max-w-full border-[1.5px] border-solid border-gray-100">
+    <div className="self-stretch flex flex-row items-start justify-center gap-[25px] mq500:gap-[12px] max-w-full text-left text-lg text-white font-poppins mq1500:flex-wrap">
+      {/* <div className="flex-1 rounded-xl bg-white shadow-[0px_0px_10px_rgba(0,_0,_0,_0.15)] box-border flex flex-col items-start justify-start py-2.5 px-2 gap-[10px] min-w-[263px] mq500:min-w-[210px] max-w-full border-[1.5px] border-solid border-gray-100">
         <div className="w-full h-[705px] relative rounded-xl bg-white shadow-[0px_0px_10px_rgba(0,_0,_0,_0.15)] box-border hidden max-w-full border-[1.5px] border-solid border-gray-100" />
         <div className="self-stretch h-[290px] relative">
           <img
-            className="absolute top-[0px] left-[0px] rounded-xl w-[385px] h-[290px] object-cover z-[1]"
+            className="absolute top-[0px] left-[0px] rounded-xl w-[385px] mq500:w-[300px] mq800:w-[340px] h-[290px] mq800:h-[240px] object-cover z-[1]"
             alt=""
             src="/stepper-parent@2x.png"
           />
@@ -64,11 +64,13 @@ const ToggleParent = () => {
             </div>
           </div>
           <div className="self-stretch rounded-xl [background:linear-gradient(94.43deg,_#0b90af,_#20c5f2)] shadow-[0px_0px_3px_rgba(0,_0,_0,_0.1)] flex flex-row items-start justify-start py-[17px] pr-[152px] pl-[141px] box-border whitespace-nowrap max-w-full z-[1] text-5xl mq450:pl-5 mq450:pr-5 mq450:box-border">
-            <div className="h-[70px] w-[385px] relative rounded-xl [background:linear-gradient(94.43deg,_#0b90af,_#20c5f2)] shadow-[0px_0px_3px_rgba(0,_0,_0,_0.1)] hidden max-w-full" />
-            <div className="relative z-[2]">View All</div>
+            <div className="h-[70px] w-[385px] relative rounded-xl flex justify-center items-center 
+            [background:linear-gradient(94.43deg,_#0b90af,_#20c5f2)] shadow-[0px_0px_3px_rgba(0,_0,_0,_0.1)] hidden max-w-full" />
+            <button className="relative z-[2]">View All</button>
           </div>
         </div>
-      </div>
+      </div> */}
+      <GroupComponent rectangle4624="/stepper-parent@2x.png"/>
       <GroupComponent rectangle4624="/rectangle-4624-1@2x.png" />
       <GroupComponent rectangle4624="/rectangle-4624-1@2x.png" />
       {/* <GroupComponent

@@ -9,7 +9,7 @@ import downarrow from "./Vector 16.png"
 import home from "./Homef.png"
 import profile from "./Profilef.png"
 import postad  from "./PostADf.png"
-
+import menu2 from "./menu2.png"
 export  {
     laptop,
     sittingman,
@@ -19,5 +19,6 @@ export  {
     man_pic,
     greycurve,
     downarrow,
-    home,profile,postad
+    home,profile,postad,
+    menu2
 };

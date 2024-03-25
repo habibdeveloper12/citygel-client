@@ -29,11 +29,11 @@ const GroupComponent = ({
   }, [propDisplay1, propHeight2]);
 
   return (
-    <div className="flex-1 rounded-xl bg-white shadow-[0px_0px_10px_rgba(0,_0,_0,_0.15)] box-border flex flex-col items-start justify-start py-2.5 px-2 gap-[10px] min-w-[263px] max-w-full text-left text-lg text-white font-poppins border-[1.5px] border-solid border-gray-100">
-      <div className="w-[405px] h-[705px] relative rounded-xl bg-white shadow-[0px_0px_10px_rgba(0,_0,_0,_0.15)] box-border hidden max-w-full border-[1.5px] border-solid border-gray-100" />
+    <div className="flex-1 rounded-xl bg-white shadow-[0px_0px_10px_rgba(0,_0,_0,_0.15)] box-border flex flex-col items-start justify-start py-2.5 px-2 gap-[10px] min-w-[263px] mq500:w-[45%] max-w-full text-left text-lg text-white font-poppins border-[1.5px] border-solid border-gray-100">
+    {/* <div className="w-[405px] mq500:w-full h-[705px] relative rounded-xl bg-white shadow-[0px_0px_10px_rgba(0,_0,_0,_0.15)] box-border hidden max-w-full border-[1.5px] border-solid border-gray-100" /> */}
       <div className="self-stretch h-[290px] relative">
         <img
-          className="absolute top-[0px] left-[0px] rounded-xl w-[385px] h-[290px] object-cover z-[1]"
+          className="absolute top-[0px] left-[0px] rounded-xl w-[385px] mq500:w-[140px] mq500:h-[120px] h-[290px] object-cover z-[1]"
           alt=""
           src={rectangle4624}
         />

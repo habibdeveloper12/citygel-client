@@ -27,7 +27,7 @@ export default function HomePage() {
               <Img
                 src="images/img_shanghai_aerial_sunset_970x1920.png"
                 alt="shanghaiaerial"
-                className="justify-center h-[800px] sm:h-[381px] mq450:h-[381px] mq750:h-[381px] w-full left-0 bottom-0 right-0 top-0 m-auto object-cover absolute"
+                className="justify-center h-[800px] sm:h-[381px] mq450:h-[381px] mq750:h-[381px] w-full left-0 bottom-0 right-0 top-0 m-auto object-cover absolute overflow-hidden"
               />
               <div className="flex flex-col items-start justify-start w-[95%] h-full left-0 bottom-0 top-0 m-auto absolute">
                 <div className="h-[745px] w-full z-[1] relative">
