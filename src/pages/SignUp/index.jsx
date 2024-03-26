@@ -30,6 +30,7 @@ import Loading from "components/Loading/Loading";
 import { toast } from "react-toastify";
 import AuthContext from "context/AuthContext";
 import { jwtDecode } from "jwt-decode";
+import CitygelLogo from "components/ai-5pages/CitygelLogo";
 
 export default function SignUpPage() {
   const {
@@ -133,8 +134,9 @@ export default function SignUpPage() {
           content="Web site created using create-react-app"
         />
       </Helmet>
+      <Header1 />
       <div className="flex flex-col items-center justify-start w-full bg-gray-50">
-        <Header1 />
+        
         <div className="flex flex-col items-center justify-start w-[32%] ">
           <div className="h-[372px] w-full  relative max-w-[372px]">
             <div className="flex flex-col items-start justify-start w-full top-[11%] right-0 left-0 m-auto absolute">
@@ -413,8 +415,9 @@ export default function SignUpPage() {
             </form>
           </div>
         </div>
-        <Footer className="flex justify-center items-center w-full mt-[120px] p-[34px] bg-gray-100_01" />
+        {/* <Footer className="flex justify-center items-center w-full mt-[120px] p-[34px] bg-gray-100_01" /> */}
       </div>
+      <CitygelLogo/>
     </>
   );
 }
